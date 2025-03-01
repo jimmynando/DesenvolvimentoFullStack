@@ -1,0 +1,25 @@
+<script>
+  class Stack {
+    constructor() {
+      this.data = [];
+    }
+    push(v) {
+      this.data.push(v);
+    }
+    back() {
+      this.data.pop();
+    }
+    print() {
+      console.log(this.data);
+    }
+  }
+
+  const history = new Stack();
+
+  history.push("http://google.com");
+  history.push("http://youtube.com");
+  history.push("http://facebook.com");
+  history.print();
+  history.back();
+  history.print();
+</script>

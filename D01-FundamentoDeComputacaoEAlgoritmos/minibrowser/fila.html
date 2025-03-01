@@ -1,0 +1,29 @@
+<script>
+  console.log("[Fila/Queue]");
+
+  class Queue {
+    constructor() {
+      this.data = [];
+    }
+
+    enqueue(v) {
+      this.data.push(v);
+    }
+
+    dequeue() {
+      this.data.shift();
+    }
+
+    print() {
+      console.log(this.data);
+    }
+  }
+
+  let requests = new Queue();
+
+  requests.enqueue("scripts.js");
+  requests.enqueue("read.me");
+  requests.enqueue("image.png");
+
+  
+</script>
