@@ -1,7 +1,17 @@
 class Nota {
+  #grau;
+
   constructor(disciplina, grau) {
     this.disciplina = disciplina;
-    this.grau = grau;
+    this.#grau = grau;
+  }
+
+  get grau() {
+    return this.#grau;
+  }
+
+  set grau(value) {
+    this.#grau = value;
   }
 }
 
@@ -19,8 +29,8 @@ class Estudante {
     return this.#matricula;
   }
 
-  set matricula(matricula) {
-    this.#matricula = matricula;
+  set matricula(value) {
+    this.#matricula = value;
   }
 }
 
