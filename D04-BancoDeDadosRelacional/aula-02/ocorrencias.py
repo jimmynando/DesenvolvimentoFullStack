@@ -1,7 +1,7 @@
 import sqlalchemy as sa
 import sqlalchemy.orm as orm
 
-engine = sa.create_engine("sqlite:///ocorrencias.db")
+engine = sa.create_engine("sqlite:///aula-02/db/ocorrencias.db")
 
 base = orm.declarative_base()
 
